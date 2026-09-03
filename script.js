@@ -4,11 +4,16 @@ const WelcomeMessage = document.getElementById("welcomeMessage");
 const studentForm = document.getElementById("studentForm");
 const studentCourse = document.getElementById("courseInput");
 
+const themeButton = document.getElementById("themeButton");
+
+
 
 NameInput.addEventListener('input', function() {
 
     WelcomeMessage.textContent = "Welcome, " + NameInput.value + "!";
 });
+
+
 
 
 
@@ -22,3 +27,9 @@ studentForm.addEventListener('submit', function(event) {
     WelcomeMessage.textContent = "Registration successful! Name:" + name + ", Course: " + course;
 });
 
+
+themeButton.addEventListener('click', function() {
+
+    document.body.classList.toggle("dark");
+
+});
