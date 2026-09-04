@@ -33,3 +33,13 @@ themeButton.addEventListener('click', function() {
     document.body.classList.toggle("dark");
 
 });
+
+
+
+document.addEventListener("keydown", function(event) {
+
+if (event.key === "Escape") {
+    WelcomeMessage.textContent = "";
+}
+
+});
